@@ -38,8 +38,8 @@ function invalidName(name) {
 }
 
 prompt(colors.yellow("Please choose a language (en/es) or (english/spanish)"));
-let lang = readline.question();
-lang = lang.toLocaleLowerCase();
+let lang = readline.question().toLowerCase();
+// lang = lang.toLowerCase();
 
 while (!["en", "es", "english", "spanish"].includes(lang)) {
   prompt(colors.red("Please choose one of both langauges (en/es)"));
